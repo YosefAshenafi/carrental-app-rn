@@ -1,4 +1,4 @@
-const vehicles = [
+const Vehicles = [
 	{
 		id: "1",
 		title: "Toyota Corolla",
@@ -53,4 +53,4 @@ const vehicles = [
 	},
 ];
 
-export default vehicles;
+export default Vehicles;
