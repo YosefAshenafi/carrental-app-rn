@@ -22,10 +22,10 @@ const DetailsScreen = ({ navigation,route }) => {
                 />
                 </ImageBackground>
                 <Text style={style.title}>{detail.detailIitle}</Text>
-                <ScrollView>
+                <ScrollView style={style.detailScroll}>
                     <Text style={style.textDetail}>
-                    {detail.detailNote}
-                </Text>
+                        {detail.detailNote}
+                    </Text>
                 </ScrollView>
                 <View sytle={style.footer}></View>
             </SafeAreaView>
@@ -43,16 +43,19 @@ const style = StyleSheet.create({
     title: {
         fontSize: 30,
         fontWeight: "bold",
-        padding: 10
+        paddingHorizontal: 15,
+        paddingTop:10
     },
-    textDetail:{
-        padding:10,
-        fontSize:15,
-        color:COLORS.dark,
-        textAlign:'justify',
-        marginBottom:10
+    textDetail: {
+        paddingHorizontal: 15,
+        fontSize: 17,
+        color: COLORS.dark,
+        textAlign: "justify",
     },
-    footer:{
-        marginTop:100
+    footer: {
+        marginTop: 100
+    },
+    detailScroll: {
+        marginTop: 0
     }
 });
